@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Principal</class>
+ <widget class="QMainWindow" name="Principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>758</width>
+    <height>674</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>758</width>
+    <height>674</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>758</width>
+    <height>674</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Simulador de detención de crimenes</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="recursos.qrc">
+    <normaloff>:/recursos/question-type-multiple-correct.png</normaloff>:/recursos/question-type-multiple-correct.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/recursos/fondonexus.png);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="GraphWidget" name="GraphWidget1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>128</y>
+      <width>758</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/recursos/marcografos.png);</string>
+    </property>
+    <property name="text" stdset="0">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSetLadron">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>97</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Indicar ubicación de policias y criminales</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txtReference">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="teinfo">
+    <property name="geometry">
+     <rect>
+      <x>39</x>
+      <y>60</y>
+      <width>691</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRestar">
+    <property name="geometry">
+     <rect>
+      <x>435</x>
+      <y>97</y>
+      <width>163</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Reiniciar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-5</x>
+      <y>52</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+image: url(:/recursos/user_business_info.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="teinfo_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>619</y>
+      <width>291</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+color: rgb(0, 170, 255);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+
+</string>
+    </property>
+    <property name="text">
+     <string>No. de controles policiales requeridos.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdControles">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>639</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+
+color: rgb(0, 85, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>false</bool>
+    </property>
+    <property name="mode">
+     <enum>QLCDNumber::Dec</enum>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Filled</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="teinfo_3">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>619</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+color: rgb(0, 170, 255);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Ruta mas corta.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="teinfo_4">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>619</y>
+      <width>231</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+color: rgb(0, 170, 255);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Costo en la ruta mas corta.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdCosto">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>639</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+
+color: rgb(0, 85, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEjecutar">
+    <property name="geometry">
+     <rect>
+      <x>261</x>
+      <y>97</y>
+      <width>175</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Ejecutar</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="teRutaCorta">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>639</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+color: rgb(85, 170, 255);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>1-&gt;2-&gt;5-&gt;8</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="teinfo_5">
+    <property name="geometry">
+     <rect>
+      <x>33</x>
+      <y>5</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Criminales</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-5</x>
+      <y>-1</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+image: url(:/recursos/ladron.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="teinfo_6">
+    <property name="geometry">
+     <rect>
+      <x>149</x>
+      <y>5</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Rutas de escape</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>107</x>
+      <y>1</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+image: url(:/recursos/LEL.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="teinfo_7">
+    <property name="geometry">
+     <rect>
+      <x>335</x>
+      <y>5</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Bloque policial</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>296</x>
+      <y>-1</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+image: url(:/recursos/policia.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>426</x>
+      <y>1</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+image: url(:/recursos/LLP.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="teinfo_8">
+    <property name="geometry">
+     <rect>
+      <x>468</x>
+      <y>5</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Ruta llegada</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>591</x>
+      <y>-1</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+image: url(:/recursos/Circle_Green.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="teinfo_9">
+    <property name="geometry">
+     <rect>
+      <x>629</x>
+      <y>5</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Ubicación inical policia</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRestar_2">
+    <property name="geometry">
+     <rect>
+      <x>597</x>
+      <y>97</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+
+border-image: url(:/imagenes/negro4.gif);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Salir</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>0</y>
+      <width>791</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.0, cy:0.0, radius:0.0, fx:0.0, fy:0.0, stop:0 rgba(0, 0, 0, 0), stop:0.35 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:0.425 rgba(0, 0, 0, 0), stop:0.0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));
+
+border-image: url(:/recursos/bannerH.png);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <zorder>line</zorder>
+   <zorder>btnRestar_2</zorder>
+   <zorder>GraphWidget1</zorder>
+   <zorder>txtReference</zorder>
+   <zorder>teinfo</zorder>
+   <zorder>btnRestar</zorder>
+   <zorder>label</zorder>
+   <zorder>teinfo_2</zorder>
+   <zorder>lcdControles</zorder>
+   <zorder>teinfo_3</zorder>
+   <zorder>teinfo_4</zorder>
+   <zorder>lcdCosto</zorder>
+   <zorder>btnEjecutar</zorder>
+   <zorder>teRutaCorta</zorder>
+   <zorder>teinfo_5</zorder>
+   <zorder>label_2</zorder>
+   <zorder>teinfo_6</zorder>
+   <zorder>label_3</zorder>
+   <zorder>teinfo_7</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>teinfo_8</zorder>
+   <zorder>label_6</zorder>
+   <zorder>teinfo_9</zorder>
+   <zorder>btnSetLadron</zorder>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GraphWidget</class>
+   <extends>QWidget</extends>
+   <header>graphwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

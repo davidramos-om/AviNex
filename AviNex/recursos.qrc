@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/">
+        <file>recursos/info.png</file>
+        <file>recursos/ladron.png</file>
+        <file>recursos/LEL.png</file>
+        <file>recursos/LLP.png</file>
+        <file>recursos/policia.png</file>
+        <file>recursos/close.png</file>
+        <file>recursos/fondo.png</file>
+        <file>recursos/fondonexus.png</file>
+        <file>recursos/negro.gif</file>
+        <file>recursos/negro2.gif</file>
+        <file>recursos/negro3.gif</file>
+        <file>recursos/negro4.gif</file>
+        <file>recursos/transparencia.png</file>
+        <file>recursos/question-type-multiple-correct.png</file>
+        <file>recursos/2.png</file>
+        <file>recursos/banner.png</file>
+        <file>recursos/azul2.gif</file>
+        <file>recursos/frameAzul.png</file>
+        <file>recursos/frameBlanco.png</file>
+        <file>recursos/frameVerde.png</file>
+        <file>recursos/Police.png</file>
+        <file>recursos/Thief.png</file>
+        <file>recursos/Circle_Green.png</file>
+        <file>recursos/user_business_info.png</file>
+        <file>recursos/marcografos.png</file>
+        <file>recursos/bannerH.png</file>
+    </qresource>
+</RCC>
